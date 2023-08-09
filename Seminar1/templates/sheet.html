@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        {% for i in sheet[0].keys() %}
+        <td>{{ i }}</td>
+        {% endfor %}
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in sheet %}
+    <tr>
+        <td>{{ student['first_name'] }}</td>
+        <td>{{ student.last_name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.avg_grade }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

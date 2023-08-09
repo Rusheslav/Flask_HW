@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Обувь{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <table class="table">
+        <thead>
+            <tr>
+                {% for i in items[0].keys() %}
+                <th>{{ i }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item['Название'] }}</td>
+                <td>{{ item['Марка'] }}</td>
+                <td>{{ item['Размер'] }}</td>
+                <td>{{ item['Цвет'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

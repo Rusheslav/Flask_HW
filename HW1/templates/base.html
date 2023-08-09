@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Домой</a></li>
+            <li><a href="/clothes">Одежда</a></li>
+            <li><a href="/shoes">Обувь</a></li>
+            <li><a href="/coat">Куртка</a></li>
+        </ul>
+    </nav>
+</header>
+{% block content %}{% endblock %}
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Картманшная. Все права защищены. А я домой.</p>
+    </div>
+</footer>
+</body>
+</html>

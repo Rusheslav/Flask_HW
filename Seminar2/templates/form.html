@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if error %}
+    <h2>Ошибка доступа!</h2>
+{% endif %}
+<form method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="Введите имя" name="name"><br>
+    <input type="password" placeholder="Введите пароль" name="password"><br><br>
+    <input type=submit value="Загрузить">
+</form>
+</body>
+</html>

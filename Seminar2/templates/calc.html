@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="Введите первое число" name="num1"><br>
+    <input type="text" placeholder="Введите второе число" name="num2"><br>
+    <p><input list="math" name="math"></p>
+    <datalist id="math">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </datalist>
+    <input type=submit value="Отправить">
+</form>
+</body>
+</html>

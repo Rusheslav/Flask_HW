@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University</title>
+</head>
+<body>
+<h1>Список студентов</h1>
+<div>
+    {% for student in students %}
+        <p>
+            Имя: {{ student.name }}<br>
+            Фамилия: {{ student.last_name }}<br>
+            Факультет: {{ student.faculty.faculty_name }}
+<!--            {% for faculty in faculties %}-->
+<!--                {% if faculty.id == student.faculty_id %}-->
+<!--                        Факультет: {{ faculty.faculty_name }}-->
+<!--                {% endif %}-->
+<!--            {% endfor %}-->
+        </p>
+    {% endfor %}
+</div>
+</body>
+</html>

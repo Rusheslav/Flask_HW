@@ -11,8 +11,8 @@ urls = ['https://w.forfun.com/fetch/70/7047b702475924ba8f8044b5b5ca56ba.jpeg',
 
 def get_urls(url):
     response = requests.get(url)
-    filename = url.replace('https://', '').replace('.', '_').replace('/', '') + '.jpg'
-    with open(f'task9dir/{filename}', 'wb') as file:
+    filename = 'thread_' + url.replace('https://', '').replace('.', '_').replace('/', '') + '.jpg'
+    with open(f'/Users/andrejlebedev/Documents/Geekbrains/Flask/Seminar4/task9dir/{filename}', 'wb') as file:
         file.write(response.content)
 
 

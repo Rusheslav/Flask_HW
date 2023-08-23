@@ -29,8 +29,8 @@ async def add_task(task: Task):
 async def update_task(task_id: int, task: Task):
     for t in TASKS:
         if t.id_ == task_id:
-            t.title = task.title
-            t.description = task.description
+            t.name = task.title
+            t.email = task.description
             t.status = task.status
             return {'task': t, 'status': 'added'}
         return HTTPException(404, 'Task not found')

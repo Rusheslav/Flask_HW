@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>{% block title %}Users{% endblock %}</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">{% block header %}User Management{% endblock %}</h1>
+    </header>
+    <main>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Your User Management App</p>
+    </footer>
+</body>
+</html>

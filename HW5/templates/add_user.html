@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Add User{% endblock %}
+
+{% block header %}Add User{% endblock %}
+
+{% block content %}
+<div class="add-user-form">
+    <form id="add-user-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit" id="add-user-button">Add user</button>
+    </form>
+</div>
+{% endblock %}

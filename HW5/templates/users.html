@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}User List{% endblock %}
+
+{% block header %}User List{% endblock %}
+
+{% block content %}
+<div class="user-table-container">
+    <table class="user-table">
+        <thead>
+        <tr>
+            {% for header in headers %}
+            <th class="table-header">{{ header }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id_ }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div>
+    <a href="/user/add" class="add-user-button">Add User</a>
+</div>
+{% endblock %}

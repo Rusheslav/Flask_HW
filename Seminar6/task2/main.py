@@ -7,7 +7,7 @@ from typing import List
 import databases as databases
 import sqlalchemy
 from fastapi import FastAPI
-from pydantic import BaseModel, Field, EmailStr, SecretStr
+from pydantic import BaseModel, Field
 
 app = FastAPI()
 
